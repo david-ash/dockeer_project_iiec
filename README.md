@@ -1,8 +1,8 @@
 # dockeer_project_iiec
 
 # Downloading the docker images
-  # mysql:5.7
-  # node:10-alpine
+  mysql:5.7
+  node:10-alpine
 
 
 # 1 Runing the Project
@@ -23,6 +23,9 @@
     
 # NOTE-:
     By default IP given to node server for connecting to the mysql is 172.18.0.2, if mysql is running on other it has to be changed by going into app.js file on line number-: 10
+    Old docker compose file has to be stopped-: sudo docker-compose stop
+    Image has to be created again and docker-compose up has to be executed again
+    
 
     
     
