@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  dbos:
+    image: mysql:5.7
+    volumes:
+      - mysql_db:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: trial
+      MYSQL_USER: ashish
+      MYSQL_PASSWORD: 123456
+
+  node_server:
+    image: asingh2985/notepad1:latest
+    restart: always
+    depends_on:
+      - dbos
+    ports:
+      - 8080:8080
+
+volumes:
+  mysql_db:
