@@ -3,11 +3,10 @@
 const express = require('express');
 const path = require('path');
 var bodyParser = require('body-parser');
-
 var knex = require('knex')({
   client: 'mysql',
   connection: {
-    host : '172.18.0.2',
+    host : 'mydb',
     user : 'ashish',
     password : '123456',
     database : 'trial'
