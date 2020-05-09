@@ -7,7 +7,7 @@
 
 # 1 Runing the Project
     Run-: npm install
-    Run-: sudo docker build -t asingh2985/notepad1:latest .
+    Run-: sudo docker build -t asingh2985/node_env_1:latest .
     This will create a docker image containg node app
     
 # 2 Running the docker-compose file
