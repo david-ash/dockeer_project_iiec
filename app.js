@@ -31,6 +31,11 @@ app.set('view engine', 'ejs');
 
 
 
+knex.schema.createTableIfNotExists('Notes', function (table) {
+  table.increments();
+  table.string('newNote');
+}).then(data => console.log("Table Created"))
+
 
 app.get('/', (req, res) => {
 	knex.select().table('Notes')
